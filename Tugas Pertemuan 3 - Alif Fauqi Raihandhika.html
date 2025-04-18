@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 3 - Alif Fauqi Raihandhika</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="icon" dipake buat masukin gambar di icon tab websitenya, yg bikin dia work adalah rel "icon" nya -->
+    <!-- <link rel="icon" href="./gambar/w3schools-logo-icon.png"> -->
+
+
+    <!-- kalo mau link file css yang ada di folder lain (di luar folder yg lagi dikerjain (harus back ke folder sebelumnya, baru bisa ke css nya gt), gimana yaaa?) 
+    
+    nanti janlup tanya di pertemuan selanjutnya.
+    -->
+</head>
+<body>
+    <!-- ini bagian pertama -->
+    <div>
+        <h1>Alif Fauqi Raihandhika</h1>
+        <span>Halo semuanya! nama saya:</span> <span id="myName">Alif Fauqi Raihandhika</span>
+        <button id="nameButton">Show Name</button>
+        <br>
+
+        <span>Saya berumur:</span> <span id="myAge">22 Tahun</span>
+        <button id="ageButton">Show Age</button>
+
+        <p>Saya suka belajar coding web</p>
+        <p>Beberapa yang hal dasar yang wajib dipelajari untuk coding web:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+    
+        <p>Beberapa series yang saya suka:</p>
+        <ol>
+            <li>Superstore</li>
+            <li>Breaking Bad</li>
+            <li>Better Call Saul</li>
+            <li>Prison Break</li>
+        </ol>
+    
+        <div id="imageContainer">
+            <div id="divImage1">
+                <img id="superstoreImg" src="https://i.ytimg.com/vi/s128_w-Pb6Y/maxresdefault.jpg" alt="Superstore Series Image">
+
+                <br>
+
+                <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png" alt="Breaking Bad Image"> 
+        
+            </div>
+
+            <div id="divImage2">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/08fd3bfadb7d07164a560a41d89765396d7be6c2f8475c35837990c1357f4c5f.jpg" alt="Better Call Saul Image">
+
+                <br>
+
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185128_b_v8_ag.jpg" alt="Prison Break Image">
+            </div>    
+        </div>
+    </div>
+
+    <div id="substractionDiv">
+        <h1>MASUKKAN ANGKA DI BAWAH INI UNTUK MELAKUKAN PENJUMLAHAN</h1>
+                <label for="firstNumber">First Number </label>
+                <input type="number" id="firstAddNumber">
+                
+                <br><br>
+                <label for="secondNumber">Second Number </label>
+                <input type="number" id="secondAddNumber">
+                
+                <br><br>
+                <button onclick="addResult()">Calculate</button>
+
+                <br><br>
+                <span>Hasilnya adalah <span id="result"></span></span> 
+
+    </div>
+
+    <div id="checkNumber10Div">
+        <h1>Masukkan Angka di Bawah Ini</h1>
+        <label for="checkNumber10">Masukkan Angka</label>
+        <input type="number" id="numberCheck">
+
+        <br><br>
+        <button onclick="checkTheNumber()">Check Number</button>
+
+        <h3 id="numberCheckResult"></h3>
+    </div>
+
+    <div id="numberConsoleLoop10">
+        <h2>Tekan button di bawah untuk print angka 1-10 di console</h2>
+        <button onclick="loopUntil10()" id="loop10Btn">Start Printing!</button>
+    </div>
+
+    <div id="changeTextBtnDiv">
+        <h2 id="changeTextTarget">Halo Nama Saya Alif Fauqi Raihandhika</h2>
+        <p>Tekan button di bawah untuk mengubah text di atas</p>
+        <button onclick="textChanger()" id="textChangerBtn">Change Text</button>
+    </div>
+
+    <div id="inputTextShowcaseDiv">
+        <h2>Masukkan apapun di input text bawah ini!</h2>
+        <input type="text" id="inputTextShowcaser"> 
+        
+        <br><br>
+        <p id="textShowcaserLine"></p>
+        <button id="inputTextShowcaserBtn" onclick="showTheInput()">Show What I Just Input!</button>
+    </div>
+
+    <div>
+        <p>yang di bawah ini size gambar diubah dengan id</p>
+        <img src="gambar/kucing akmal topi.jpg" alt="gambar kucing akmal topi" id="kucingAkmalTopi">
+    </div>
+
+    <div class="highlight">
+        <p>gambar di atas adalah gamnbar sebuah kucing mujaer</p>
+        <p>div ini menggunakan class highlight dan font underdog</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
